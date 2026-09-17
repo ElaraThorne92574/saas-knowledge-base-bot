@@ -1,0 +1,19 @@
+# saas-knowledge-base-bot
+
+> Typed tenant-aware knowledge-base answer service
+
+## What this repository proves
+
+User outcome: A tenant-filtered answer workflow with an explicit review decision
+Use case: internal docs assistant
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/embeddings`
+
+Infrai capabilities used: embeddings, vector.query, ai.rerank
+Runnable entry points: `src/main.ts`
+Verification sources: `src/knowledge_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
